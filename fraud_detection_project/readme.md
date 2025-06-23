@@ -17,7 +17,7 @@ fraud_detection_project/
 
 │ └── 2018-04-03.pkl
 
-│ └── More pkl files
+│ └── (More pkl files)
 
 ├── fraud_detection.py
 
