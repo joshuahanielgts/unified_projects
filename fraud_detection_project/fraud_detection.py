@@ -4,9 +4,9 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
 sample_files = [
-    "dataset/data/2018-04-01.pkl",
-    "dataset/data/2018-04-02.pkl",
-    "dataset/data/2018-04-03.pkl"
+    "dataset/data 1/2018-04-01.pkl",
+    "dataset/data 1/2018-04-02.pkl",
+    "dataset/data 1/2018-04-03.pkl"
 ]
 
 dfs = [pd.read_pickle(f) for f in sample_files]
