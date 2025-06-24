@@ -13,5 +13,5 @@ This repository contains 4 real-world AI/ML projects completed as part of a tech
 ---
 🙌 Author:
 J Joshua Haniel  
-[GitHub](https://github.com/joshuahanielgts)  
-[LinkedIn](https://www.linkedin.com/in/joshuahanielgts)
+[GitHub](https://github.com/joshuahanielgts/)  
+[LinkedIn](http://www.linkedin.com/in/joshuahanielgts)
