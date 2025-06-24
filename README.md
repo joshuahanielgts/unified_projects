@@ -10,6 +10,7 @@ This repository contains 4 real-world AI/ML projects completed as part of a tech
 ### 3. 🚗 Vehicle Price Prediction
 ### 4. 🤟 ASL Detection (American Sign Language)
 
+---
 🙌 Author:
 J Joshua Haniel  
 [GitHub](https://github.com/joshuahanielgts)  
