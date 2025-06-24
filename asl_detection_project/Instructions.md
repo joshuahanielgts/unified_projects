@@ -1,84 +1,80 @@
-====================================================
-🖐 ASL Detection Project – Setup Instructions
-====================================================
+# 🗂 Dataset Setup Instructions – ASL Detection Project
 
-This project builds a system that detects ASL (American Sign Language) signs and predicts the corresponding alphabet using a deep learning model (CNN).
+This guide will help you download and correctly place the dataset required to train and test the ASL Detection model.
 
-----------------------------------------------------
-📦 Step 1: Download Dataset
-----------------------------------------------------
+---
 
-The dataset is too large to include in this repository.
+## 📦 Step 1: Download the Dataset
 
-Please manually download it from Kaggle:
-🔗 https://www.kaggle.com/datasets/grassknoted/asl-alphabet
+The dataset is too large to upload directly to GitHub. Please download it manually from Kaggle:
 
-Once downloaded:
+🔗 [ASL Alphabet Dataset (by grassknoted)](https://www.kaggle.com/datasets/grassknoted/asl-alphabet)
 
-1. Extract the ZIP file.
-2. Copy the folder `asl_alphabet_train` into the following directory:
-   => asl_detection_project/dataset/
+---
 
-So it should look like this:
-📁 asl_detection_project/
-├── dataset/
-│   └── asl_alphabet_train/
-│       ├── A/
-│       ├── B/
-│       ├── ...
-│       └── nothing/
+## 📁 Step 2: Folder Structure After Extraction
 
-----------------------------------------------------
-🧠 Step 2: Train the Model
-----------------------------------------------------
+Once downloaded and extracted:
+You will see a folder named: `asl_alphabet_train`
 
-Install TensorFlow:
 
-    pip install tensorflow
+✅ Make sure the folder `asl_alphabet_train` is directly inside the `dataset/` folder.
 
-Then run:
+---
 
-    python train.py
+## 🧠 Step 3: Train the Model
+
+Make sure you have TensorFlow installed:
+
+```bash
+pip install tensorflow
+```
+Now run the training script:
+```
+python train.py
+```
 
 This will:
-- Train a CNN model on the ASL dataset
-- Save it as `asl_model.h5` inside the project directory
 
-----------------------------------------------------
-🧪 Step 3: Predict from a Test Image
-----------------------------------------------------
+-Train a CNN model on the ASL dataset
 
-1. Add your test images to the `test_images/` folder.
-   Example:
-   => asl_detection_project/test_images/B_test.jpg
+-Save the trained model as asl_model.h5
 
-2. Open `predict.py` and change the image path:
+🧪 Step 4: Run Predictions
+Place your test images (like A_test.jpg, B_test.jpg) in the test_images/ folder.
 
-   TEST_IMAGE_PATH = 'test_images/B_test.jpg'
+In predict.py, update the image path:
 
-3. Run the script:
+```
+TEST_IMAGE_PATH = 'test_images/B_test.jpg'
+```
+Run the prediction script:
+```
+python predict.py
+```
+You will see output like:
 
-    python predict.py
-
-It will print the detected ASL letter like this:
 ✅ Prediction: The ASL sign is 'B'
 
-----------------------------------------------------
-📄 File Structure Overview
-----------------------------------------------------
+🗂 Final Project Structure
 
 asl_detection_project/
-├── dataset/
-│   └── asl_alphabet_train/      <-- Paste downloaded dataset here
-├── test_images/                 <-- Put your test images here
-├── train.py                     <-- CNN model training script
-├── predict.py                   <-- Run predictions on test images
-├── asl_model.h5                 <-- Model saved after training
-└── INSTRUCTIONS.txt             <-- You're reading it!
 
-----------------------------------------------------
-🙌 Credits
-----------------------------------------------------
+├── dataset/
+
+│   └── asl_alphabet_train/   # <-- Place downloaded dataset here
+
+├── test_images/                  # <-- Place test images here
+
+├── train.py                      # CNN model training script
+
+├── predict.py                    # Predicts ASL sign from image
+
+├── asl_model.h5                  # Trained model (after running train.py)
+
+└── DATASET_SETUP.md              # You're reading this file!
+
+🙌 Author
 
 J Joshua Haniel  
 [GitHub](https://github.com/joshuahanielgts)  
